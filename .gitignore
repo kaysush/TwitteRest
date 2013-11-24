@@ -8,4 +8,4 @@
 target/
 
 #Ignoring the configuration file
-src/resources/TwitterConfiguration.properties
+src/main/resources/TwitterConfiguration.properties
