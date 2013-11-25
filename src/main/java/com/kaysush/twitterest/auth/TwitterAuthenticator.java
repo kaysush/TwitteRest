@@ -57,7 +57,6 @@ public class TwitterAuthenticator {
         String CONSUMER_KEY = props.getString("consumer.key");
         String CONSUMER_SECRET = props.getString("consumer.secret");
         String AUTH_URL = props.getString("url.auth");
-        String STREAM_URL = props.getString("url.stream");
 
         String urlConsumerKey = URLEncoder.encode(CONSUMER_KEY, "UTF-8");
         String urlConsumerSecret = URLEncoder.encode(CONSUMER_SECRET, "UTF-8");

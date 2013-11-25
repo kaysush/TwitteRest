@@ -13,9 +13,9 @@ import org.apache.http.client.methods.HttpGet;
  * @author SUSHIL
  */
 public class FetchTweets {
-    final static String TwitterStreamURL = "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=";
     public static Twitter fetch(String accessToken , String username){
-        HttpGet httpGet = new HttpGet(TwitterStreamURL + username);
+        String TwitterStreamURL = Helper.gerTwitterConfiguration().getString("url.stream");
+        HttpGet httpGet = new HttpGet(TwitterStreamURL + "?screen_name=" + username);
         httpGet.setHeader("Authorization" , "Bearer " + accessToken);
         httpGet.setHeader("Content_Type", "application/json");
         String response = Helper.getResponseBody(httpGet);
