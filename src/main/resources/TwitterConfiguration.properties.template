@@ -3,3 +3,8 @@
 # CAUTION : This file contains sensitive information and should
 # not be publicised.
 
+consumer.key=<YOUR_VALUE_HERE>
+consumer.secret=<YOUR_VALUE_HERE>
+url.auth=<YOUR_VALUE_HERE>
+url.stream=<YOUR_VALUE_HERE>
+
